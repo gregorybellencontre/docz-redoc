@@ -1,0 +1,36 @@
+{
+  "name": "documentation",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "start": "docz dev",
+    "build:docz": "docz build",
+    "build": "yarn build:docz && yarn build:server",
+    "lint": "eslint '**/*.{js,ts,tsx,mdx}' --ignore-path .gitignore",
+    "check:types": "tsc --noEmit --incremental false"
+  },
+  "author": "PayFit",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/PayFit/partner-api.git"
+  },
+  "dependencies": {
+    "core-js": "^3.6.5",
+    "gatsby": "^2.23.12",
+    "mobx": "^4.2.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "redoc": "^2.0.0-rc.31",
+    "styled-components": "^5.1.1"
+  },
+  "devDependencies": {
+    "docz": "^2.3.2-alpha.0",
+    "eslint-plugin-mdx": "1.7.0",
+    "ts-node-dev": "1.0.0-pre.49",
+    "typescript": "3.9.3"
+  },
+  "resolutions": {
+    "eslint": "7.2.0"
+  },
+  "license": "Apache-2.0"
+}

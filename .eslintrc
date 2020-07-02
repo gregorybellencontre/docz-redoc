@@ -1,0 +1,18 @@
+{
+  "extends": [
+    "plugin:mdx/recommended"
+  ],
+  "rules": {
+    "no-alert": "off",
+    "react/jsx-filename-extension": [
+      "error",
+      {
+        "extensions": [
+          ".js",
+          ".tsx",
+          ".mdx"
+        ]
+      }
+    ]
+  }
+}
